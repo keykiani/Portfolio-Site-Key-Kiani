@@ -6,57 +6,91 @@ Secondary Color (Black):FFFFFF
 Secondary Color (White): 000000
 */
 
-body {font-family: 'Open Sans', sans-serif;}
-
 body {
-  background-color: #ffffff; /* Black */
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.6;
-  color: #FFFFFF; /* Black */
+    font-family: "Open Sans", sans-serif;
 }
 
-h1, h2, h3, h4 {line-height: 1.4;}
+body {
+    background-color: #ffffff; /* Black */
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    color: #ffffff; /* Black */
+}
 
-h1 {font-size: 2.75em;font-weight: 700;}
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.4;
+}
 
-h2 {font-size: 2.25em;font-weight: 700;}
+h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+}
 
-h3 {font-size: 1.75em;font-weight: 400;}
+h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+}
 
-h4 {font-size: 1.35em; font-weight: 400;}
+h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+}
 
-img {width: 100%;}
+h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+}
 
 a:visited {
-  color: #8B008B; /* Purple */
+    color: #8b008b; /* Purple */
 }
 
 a:active {
-  color: #BA4419; /* Dark Orange */
+    color: #ba4419; /* Dark Orange */
 }
 
 a:focus {
-  color: #F78D2D; /* Orange */
-  text-decoration: underline;
+    color: #f78d2d; /* Orange */
+    text-decoration: underline;
 }
 
-a {color: orange; }
-
-.button:hover {opacity: 0.6; text-decoration: none;}
-
-.button.contact {background-color: transparent; color: #F78D2D; /* Orange */
-  text-transform: uppercase; border: 2px solid #BA4419; /* Dark Orange */
+a {
+    color: orange;
 }
 
-.button.contact:hover { background-color: #F78D2D; /* Orange */
-  color: #FFFFFF; /* Black */
+.button:hover {
+    opacity: 0.6;
+    text-decoration: none;
 }
 
-.button { display: inline-block;
-  background-color: #F78D2D; /* Orange */
-  color: #FFFFFF; /* Black */
-  font-weight: 400; padding: 10px; border-radius: 3px;
-  border-bottom: 2px solid #F78D2D; /* Orange */
-  transition: 0.2s opacity;}
+.button.contact {
+    background-color: transparent;
+    color: #f78d2d; /* Orange */
+    text-transform: uppercase;
+    border: 2px solid #ba4419; /* Dark Orange */
+}
+
+.button.contact:hover {
+    background-color: #f78d2d; /* Orange */
+    color: #ffffff; /* Black */
+}
+
+.button {
+    display: inline-block;
+    background-color: #f78d2d; /* Orange */
+    color: #ffffff; /* Black */
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #f78d2d; /* Orange */
+    transition: 0.2s opacity;
+}
