@@ -2,21 +2,63 @@
 Colors used:
 Primary Color (Orange):F78D2d
 Secondary Color (Purple): 8B008B
-Secondary Color (Black):FFFFFF
-Secondary Color (White): 000000
+Secondary Color (White):FFFFFF
+Secondary Color (Black): 000000
 */
 
-body {
-    font-family: "Open Sans", sans-serif;
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+#header {
+    max-width: 1200px;
+    text-align: center;
+    padding: 10px 15px;
+    background-color: #ffe4c4;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.22);
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.22);
+    position: relative;
+    width: 100%;
+}
+nav > ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a{
+  list-style: none;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #F78D2D;
+  width: 100%;
 }
 
 body {
-    background-color: #ffffff; /* Black */
-    font-family: "Lato", sans-serif;
+    background-color: #FFFFFF; /* White */
+    font-family: "Open sans", sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 1.6;
-    color: #ffffff; /* Black */
+    color: #000000; /* Black */
+}
+
+#hero {
+  background-color: #ffe4c4;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 133px;
 }
 
 h1,
@@ -67,6 +109,19 @@ a {
     color: orange;
 }
 
+#hero h1{
+  text-align: center;
+}
+
+.logo{
+  max-width: 250px;
+  text-align: center;
+}
+
+.row {
+  margin: 25px 0;
+}
+
 .button:hover {
     opacity: 0.6;
     text-decoration: none;
@@ -81,13 +136,13 @@ a {
 
 .button.contact:hover {
     background-color: #f78d2d; /* Orange */
-    color: #ffffff; /* Black */
+    color: #000000; /* Black */
 }
 
 .button {
     display: inline-block;
     background-color: #f78d2d; /* Orange */
-    color: #ffffff; /* Black */
+    color: #000000; /* Black */
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
