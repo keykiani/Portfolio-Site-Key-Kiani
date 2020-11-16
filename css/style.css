@@ -140,6 +140,13 @@ a {
 
 .row {
   margin: 25px 0;
+  padding: 0 20px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .button:hover {
@@ -174,8 +181,11 @@ a {
     padding: 0 15px;
     max-width: 1200px;
     text-align: center;
-} /* Workaround to get the centering working on some headings
+} /* Workaround to get the centering working on some headings */
 
+[class*="col-"] {
+  float: left;
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -190,6 +200,10 @@ Medium devices (640px and larger)
       float: right;
       margin-top: 4px;
     }
+  }
+
+  .col-md-6 {
+  width: 50%;
   }
 /* ==============================
 Large devices (1024px or larger)
