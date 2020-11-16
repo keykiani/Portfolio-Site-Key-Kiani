@@ -24,6 +24,7 @@ body {
     font-weight: 300;
     line-height: 1.6;
     color: #000000; /* Black */
+}
 
 #header {
     max-width: 1200px;
@@ -160,7 +161,7 @@ a {
     padding: 0 15px;
     max-width: 1200px;
     text-align: center;
-  }
+}
 
 /* ==============================
 Medium devices (640px and larger)
