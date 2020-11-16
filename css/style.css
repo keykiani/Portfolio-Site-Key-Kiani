@@ -39,7 +39,24 @@ body {
 #hero {
   padding: 20px 0;
   display: inline-block;
+  text-align: center;
   width: 100%;
+}
+
+#hero span {
+  display: block;
+}
+
+#hero h1{
+  text-align: center;
+}
+
+#work h2{
+  text-align: center;
+}
+
+#conact h2{
+  text-align: center;
 }
 
 nav > ul{
@@ -93,10 +110,6 @@ h4 {
 
 img {
     width: 100%;
-}
-
-#hero h1{
-  text-align: center;
 }
 
 a:visited {
@@ -161,7 +174,7 @@ a {
     padding: 0 15px;
     max-width: 1200px;
     text-align: center;
-}
+} /* Workaround to get the centering working on some headings
 
 /* ==============================
 Medium devices (640px and larger)
