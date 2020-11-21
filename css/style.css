@@ -143,12 +143,6 @@ a {
   padding: 0 20px;
 }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 .button:hover {
     opacity: 0.6;
     text-decoration: none;
@@ -177,15 +171,22 @@ a {
     transition: 0.2s opacity;
 }
 
-.containercenter {
-    padding: 0 15px;
+.containercenter {ß
     max-width: 1200px;
     text-align: center;
 } /* Workaround to get the centering working on some headings */
 
 [class*="col-"] {
   float: left;
+  padding: 10px 15px;
 }
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
