@@ -76,15 +76,17 @@ a:focus {
     background-color: #f78d2d; /* Orange */
     color: #000000; /* Black */
     font-weight: 400;
+    text-decoration: none;
     padding: 10px;
     border-radius: 8px;
     border-bottom: 2px solid #f78d2d; /* Orange */
+    transition-property: opacity;
     transition: 0.2s opacity;
 }
 
 .button:hover {
+    cursor: pointer;
     opacity: 0.6;
-    text-decoration: none;
 }
 
 .button.contact {
@@ -194,6 +196,9 @@ main {
   margin: 0 auto;
 }
 
+/* ::::::::::::::::::::::::::: ANIMATION */
+
+@keyframes
 
 /* ==============================
 Medium devices (640px and larger)
