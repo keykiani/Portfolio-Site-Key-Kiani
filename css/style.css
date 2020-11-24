@@ -12,11 +12,6 @@ Secondary Color (Black): 000000
   box-sizing: border-box;
 }
 
-.container {
-  padding: 0 15px;
-  max-width: 1200px;
-}
-
 body {
     background-color: #FFFFFF; /* White */
     font-family: "Open sans", sans-serif;
@@ -26,60 +21,7 @@ body {
     color: #000000; /* Black */
 }
 
-#header {
-    max-width: 1200px;
-    text-align: center;
-    padding: 10px 15px;
-    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.22);
-    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.22);
-    position: relative;
-    width: 100%;
-}
-
-#hero {
-  padding: 20px 0;
-  display: inline-block;
-  text-align: center;
-  width: 100%;
-}
-
-#hero span {
-  display: block;
-}
-
-#hero h1{
-  text-align: center;
-}
-
-#work h2{
-  text-align: center;
-}
-
-#conact h2{
-  text-align: center;
-}
-
-nav > ul{
-  list-style-type: none;
-  padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
-}
-
-nav > ul > li > a{
-  list-style: none;
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #F78D2D;
-  width: 100%;
-}
-
-main {
-  padding-top: 133px;
-}
+/* ::::::::::::::::::::::::::: BASE STYLES */
 
 h1,
 h2,
@@ -112,6 +54,10 @@ img {
     width: 100%;
 }
 
+a {
+    color: orange;
+}
+
 a:visited {
     color: #8b008b; /* Purple */
 }
@@ -125,22 +71,15 @@ a:focus {
     text-decoration: underline;
 }
 
-a {
-    color: orange;
-}
-
-.footer{
-  max-width: 80px;
-}
-
-.logo{
-  max-width: 250px;
-  text-align: center;
-}
-
-.row {
-  margin: 25px 0;
-  padding: 0 20px;
+.button {
+    display: inline-block;
+    background-color: #f78d2d; /* Orange */
+    color: #000000; /* Black */
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom: 2px solid #f78d2d; /* Orange */
+    transition: 0.2s opacity;
 }
 
 .button:hover {
@@ -160,32 +99,101 @@ a {
     color: #000000; /* Black */
 }
 
-.button {
-    display: inline-block;
-    background-color: #f78d2d; /* Orange */
-    color: #000000; /* Black */
-    font-weight: 400;
-    padding: 10px;
-    border-radius: 8px;
-    border-bottom: 2px solid #f78d2d; /* Orange */
-    transition: 0.2s opacity;
-}
+/* ::::::::::::::::::::::::::: SPECIALTY */
 
 .containercenter {ß
     max-width: 1200px;
     text-align: center;
 } /* Workaround to get the centering working on some headings */
 
-[class*="col-"] {
-  float: left;
-  padding: 10px 15px;
+/* ::::::::::::::::::::::::::: HEADER */
+
+header {
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.22);
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.22);
 }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+#header {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 15px;
+    position: relative;
+    width: 100%;
 }
+nav > ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a{
+  list-style: none;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #F78D2D;
+  width: 100%;
+}
+.logo{
+  max-width: 250px;
+  text-align: center;
+}
+
+/* ::::::::::::::::::::::::::: FOOTER */
+
+.footer{
+  max-width: 80px;
+}
+#contact h2{
+  text-align: center;
+}
+
+
+/* ::::::::::::::::::::::::::: MAIN */
+
+main {
+  padding-top: 133px;
+}
+
+/* ::::::::::::::::::::::::::: HERO */
+
+#hero {
+  padding: 20px 0;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+#hero span {
+  display: block;
+}
+
+#hero h1{
+  text-align: center;
+}
+
+/* ::::::::::::::::::::::::::: WORK */
+
+#work h2{
+  text-align: center;
+}
+
+/* ::::::::::::::::::::::::::: GRIDS */
+
+.row {
+  margin: 25px 0;
+  padding: 0 20px;
+}
+.container {
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 
 /* ==============================
 Medium devices (640px and larger)
@@ -193,23 +201,42 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
     header {
       text-align: unset;
-      padding: 20px 0 13px;
+      padding: 0 0 13px;
+      width: 100%
     }
-
     nav {
       width: auto;
       float: right;
       margin-top: 4px;
     }
-  }
-
-  .col-md-6 {
-  width: 50%;
-  }
+    #header {
+      overflow: hidden;
+    }
+    .logo {
+      float: left;
+    }
+    .col-md-6 {
+      width: 50%;
+    }
+    [class*="col-"] {
+      float: left;
+      padding: 10px 15px;
+    }
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+}
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  .col-md-7 {
+    width: 60%;
+  }
+  .col-md-5 {
+    width: 40%;
 }
 /* ==============================
 X-large devices (1440px or larger)
