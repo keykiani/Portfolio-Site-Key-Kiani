@@ -198,6 +198,20 @@ main {
 
 /* ::::::::::::::::::::::::::: ANIMATION */
 
+#Droplet{
+  animation: 2s bounce infinite alternate ease;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(50px, -100px);
+  }
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
