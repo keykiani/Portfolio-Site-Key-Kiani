@@ -148,6 +148,7 @@ nav > ul > li > a{
   position: relative;
 }
 .navtoggle li .icon {
+  width: auto;
   position: absolute;
   right: 0;
   top: 2px;
