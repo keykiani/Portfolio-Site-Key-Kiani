@@ -50,11 +50,11 @@ h4 {
 }
 
 img {
-  width: 100%;
+  width: 96%;
 }
 
 a {
-  color: #8b008b;
+  color: #8b008b; /* Purple */
 }
 
 a:visited {
@@ -66,7 +66,7 @@ a:active {
 }
 
 a:focus {
-  color: #8b008b; /* Orange */
+  color: #ffff; /* White */
   text-decoration: underline;
 }
 
@@ -115,7 +115,7 @@ header {
 }
 
 #header {
-  background-color: #ffff;
+  background-color: #ffff; /* white */
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px 15px;
@@ -180,7 +180,7 @@ nav > ul > li > a {
 
 /* ::::::::::::::::::::::::::: FOOTER */
 .footer {
-  max-width: 80px;
+  max-width: 100px;
 }
 
 #contact h2 {
@@ -257,14 +257,14 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin-top: 10px;
   }
 
   nav > ul > li {
     display: inline-block;
   }
 
-  #header {
+  header {
     overflow: hidden;
   }
 
