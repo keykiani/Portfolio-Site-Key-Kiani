@@ -61,11 +61,11 @@ a:visited {
 }
 
 a:active {
-  color: #ba4419; /* Dark Orange */
+  color: #f78d2d; /* Dark Orange */
 }
 
 a:focus {
-  color: #f78d2d; /* Orange */
+  color: #8b008b; /* Orange */
   text-decoration: underline;
 }
 
@@ -75,11 +75,11 @@ a:focus {
   color: #000; /* Black */
   font-weight: 400;
   text-decoration: none;
-  padding: 10px;
+  padding: 12px;
   border-radius: 8px;
   border-bottom: 2px solid #f78d2d; /* Orange */
   transition-property: opacity;
-  transition: 0.2s opacity;
+  transition: 0.5s opacity;
 }
 
 .button:hover {
