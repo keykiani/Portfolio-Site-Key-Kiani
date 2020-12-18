@@ -4,6 +4,7 @@ Primary Color (Orange):F78D2d
 Secondary Color (Purple): 8B008B
 Secondary Color (White):FFFFFF
 Secondary Color (Black): 000000
+Tercery Color (Silver): 797B84
 */
 
 /* Layout styling */
@@ -53,7 +54,7 @@ img {
 }
 
 a {
-  color: orange;
+  color: #8b008b;
 }
 
 a:visited {
@@ -78,8 +79,8 @@ a:focus {
   padding: 12px;
   border-radius: 8px;
   border-bottom: 2px solid #f78d2d; /* Orange */
-  transition-property: opacity;
   transition: 0.5s opacity;
+  transition-property: opacity;
 }
 
 .button:hover {
@@ -114,6 +115,7 @@ header {
 }
 
 #header {
+  background-color: #ffff;
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px 15px;
@@ -136,7 +138,7 @@ nav > ul > li > a {
 }
 
 .logo {
-  max-width: 150px;
+  max-width: 60px;
   text-align: center;
 }
 
@@ -169,7 +171,7 @@ nav > ul > li > a {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255, 127, 80, 0.5);
+  border-top: 2px solid rgba(255, 127, 80, 0.5);
 }
 
 .navtoggle.responsive li:last-child {
