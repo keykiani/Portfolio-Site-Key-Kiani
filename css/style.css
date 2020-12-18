@@ -188,7 +188,7 @@ nav > ul > li > a {
 }
 
 /* ::::::::::::::::::::::::::: MAIN */
-main {
+#main {
   padding-top: 133px;
 }
 
@@ -311,5 +311,13 @@ X-large devices (1440px or larger)
 @media only screen and (min-width: 1440px) {
   .navtoggle li:last-child {
     display: none;
+  }
+
+  .col-lg-7 {
+    width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%;
   }
 }
