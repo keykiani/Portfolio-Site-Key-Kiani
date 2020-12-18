@@ -62,7 +62,7 @@ a:visited {
 }
 
 a:active {
-  color: #f78d2d; /* Orange */
+  color: #f78d2d; /* Dark Orange */
 }
 
 a:focus {
@@ -223,6 +223,7 @@ nav > ul > li > a {
   padding: 0 15px;
   max-width: 1200px;
   margin: 0 auto;
+  text-align: center;
 }
 
 /* ::::::::::::::::::::::::::: ANIMATION */
