@@ -66,7 +66,7 @@ a:active {
 }
 
 a:focus {
-  color: #ffff; /* White */
+  color: #f78d2d; /* Orange */
   text-decoration: underline;
 }
 
@@ -115,7 +115,7 @@ header {
 }
 
 #header {
-  background-color: #ffff; /* white */
+  background-color: #fff; /* white */
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px 15px;
