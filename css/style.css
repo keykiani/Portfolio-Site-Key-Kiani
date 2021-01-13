@@ -50,11 +50,12 @@ h4 {
 }
 
 img {
-  width: 96%;
+  width: 90%;
+  align-items: center;
 }
 
 a {
-  color: #8b008b; /* Purple */
+  color: #ffffff; /* Black */
 }
 
 a:visited {
