@@ -50,8 +50,13 @@ h4 {
 }
 
 img {
-  width: 90%;
+  width: 100%;
   align-items: center;
+  max-width: 520px;
+}
+
+img:active {
+  transform: scale(2);
 }
 
 a {
@@ -271,6 +276,10 @@ Medium devices (640px and larger)
     overflow: hidden;
   }
 
+  img {
+    width: 60%;
+  }
+
   .logo {
     float: left;
   }
@@ -299,6 +308,13 @@ Large devices (1024px or larger)
     display: none;
   }
 
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+
   .col-lg-7 {
     width: 60%;
   }
@@ -314,6 +330,11 @@ X-large devices (1440px or larger)
 @media only screen and (min-width: 1440px) {
   .navtoggle li:last-child {
     display: none;
+  }
+
+  img {
+    float: inherit;
+    width: 60%;
   }
 
   .col-lg-7 {
